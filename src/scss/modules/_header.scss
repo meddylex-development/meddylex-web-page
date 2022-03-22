@@ -1,0 +1,137 @@
+
+@use '../variables' as *;
+@use '../mixins' as *;
+
+
+header {
+  width: 100%;
+  height: 70px;
+  //background-color: map-get($colors, 'header');
+  background-color: #00000054;
+  position: fixed;
+
+  .header{
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    .navbar{
+      display: none;
+    }
+
+    @include desktop(){
+
+      .burger-button,.spacer{
+        display: none;
+      }
+
+      .navbar{
+        flex:1 0 auto;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+      }
+
+    }
+  }
+
+}
+
+.navbar {
+
+
+
+  a{
+    border: solid transparent;
+    font-size: 1.8rem;
+    @include lightLink();
+    margin:0 2%;
+    padding:.5% 3%;
+    transition: 0.2s ease-in ;
+    &:first-child{
+      margin-left: 0;
+    }
+    &:last-child{
+      margin-right: 0;
+    }
+
+    &:hover{
+      border-bottom:solid $smartBlue;
+
+    }
+
+    &.active {
+      border-bottom:solid $smartBlue;
+    }
+  }
+
+}
+
+.mobile-menu{
+  display: none;
+  background-color: map-get($colors, 'menu-movil' );
+
+  &.slide-in-right{
+    display: block;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 2;
+  }
+}
+
+.close-button-container{
+  display: flex;
+  width: calc(100% - 2rem);
+  height: 70px;
+  align-items: center;
+  justify-content: flex-end;
+
+  .close-button{
+    padding: 1%;
+
+  }
+
+}
+
+.mobile-nav {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 60vh;
+
+  a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    @include lightLink();
+    font-size: 1.8rem;
+    padding: 4%;
+    margin:2% 0;
+    border-bottom: solid $smartBlue 1px;
+    text-align: center;
+
+    img {
+      margin-right: 1rem;
+    }
+
+    @include custom(450){
+      padding: 2%;
+      margin:0;
+    }
+  }
+
+}
+.mountain-logo{
+  padding-top: 10%;
+  // position: fixed;
+  // left: 50%;
+  // bottom: 15%;
+  // transform: translateX(-50%);
+
+}

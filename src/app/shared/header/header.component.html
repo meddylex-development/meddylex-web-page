@@ -1,0 +1,80 @@
+<header>
+  <div class="header container">
+    <div class="logo">
+      <a routerLink = "home">
+        <img src="../../../assets/icons/Logo.png" alt="Light_Logo">
+      </a>
+    </div>
+    
+    <span class="spacer"></span>
+  
+    <!-- BURGER MENU -->
+    <div #open class="burger-button"
+                
+                (click) = "burgerButton()">
+                <img src="../../../assets/icons/BurgerIcon.svg" alt="Burger_Button">
+    </div>
+    <div class="burger-menu-container"></div>
+    
+    <!-- EXPANDED MENU-->
+    <nav class="navbar">
+      <a routerLink ="home"
+          routerLinkActive="active">Inicio</a>
+      <a routerLink ="nosotros"
+          routerLinkActive="active">Nosotros</a>
+      <a routerLink = "portafolio"
+          routerLinkActive = "active">Servicios</a>
+      <a routerLink = "equipo"
+          routerLinkActive = "active">Equipo</a>
+      <a routerLink = "contacto"
+      routerLinkActive = "active">Contacto</a>
+    </nav>
+    
+    <div #mobile_menu class="mobile-menu">
+      <div class="close-button-container">
+        <div #close class="close-button"
+              (click)="closeMenuButton()">
+          <img src="../../../assets/icons/cancelIcon.svg" alt="cancel_icon">
+        </div>
+      </div>
+      <nav class = "mobile-nav">
+        <a routerLink ="home"
+          routerLinkActive="active"
+          (click) = "closeMenuButton()"> 
+          <img src="../../../assets/icons/HomeIcon.svg" alt="Home_icon">Inicio</a>
+        <a routerLink ="nosotros"
+          routerLinkActive="active"
+          (click) = "closeMenuButton()">
+          <img src="../../../assets/icons/nosotrosIcon.svg" alt="Nosotros_icon">
+          Nosotros</a>
+        <a routerLink = "portafolio"
+          routerLinkActive = "active"
+          (click) = "closeMenuButton()">
+          <img src="../../../assets/icons/portfolio_icon.svg" alt="Portfolio_icon">
+          Servicios</a>
+        <a routerLink = "equipo"
+            routerLinkActive = "active"
+            (click) = "closeMenuButton()">
+          <img src="../../../assets/icons/equipo_icon.svg" alt="Equipo_icon">Equipo</a>
+        <a routerLink = "contacto"
+          routerLinkActive = "active"
+          (click) = "closeMenuButton()">
+          <img src="../../../assets/icons/contacto_icon.svg" alt="contacto_icon">Contacto</a>
+        
+        <div class="mountain-logo">
+          <!-- <img src="../../../assets/icons/PiramideConocimientoLight.svg" alt="Piramide_Conocimiento"> -->
+          <div class="mountain-anim">
+            <ng-lottie [options] = 'logo'
+                        width = 55px></ng-lottie>
+            <!-- <img src="../../../../assets/icons/MountainsLogoLight.svg" alt="Logo"> -->
+          </div>
+        </div>
+
+      </nav>
+      
+    </div>
+
+    
+  </div>
+
+</header>

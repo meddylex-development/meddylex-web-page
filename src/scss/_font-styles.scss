@@ -1,0 +1,50 @@
+@font-face {
+  font-family: Century_Gothic;
+  src: url(../assets/fonts/CenturyGothic.ttf) format('truetype');
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: Century_Gothic;
+  src: url(../assets/fonts/GOTHICB.TTF) format('truetype');
+  font-weight: bold;
+  font-display: swap;
+}
+@font-face {
+  font-family: Century_Gothic;
+  src: url(../assets/fonts/GOTHICI.TTF) format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+
+
+
+//? Variables
+$primary-font : Century_Gothic, sans-serif;
+
+//? Mixins
+
+@mixin regular {
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin italic {
+  font-style: italic;
+  font-weight: normal;
+}
+
+@mixin bold {
+  font-style: normal;
+  font-weight: bold;
+}
+
+
+
+* {
+  font-family: $primary-font;
+}
+

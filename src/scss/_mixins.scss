@@ -1,0 +1,156 @@
+
+@use 'variables' as *;
+
+//* Mixins
+
+@mixin resetSpace {
+  padding: 0;
+  margin: 0;
+}
+
+@mixin telefono {
+  @media (min-width: #{$telefono} ) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (min-width: #{$tablet} ) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (min-width: #{$desktop} ) {
+    @content;
+  }
+}
+@mixin desktopL {
+  @media (min-width: #{$desktopL} ) {
+    @content;
+  }
+}
+
+@mixin custom($size){
+  @media (min-width: #{$size}px){
+    @content;
+  }
+}
+
+@mixin azulC(){
+  background-color: blue;
+}
+
+@mixin lightLink(){
+  text-decoration: none;
+  color: $white;
+}
+
+@mixin buttonBlue {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  background-color: $smartBlue;
+  // width: 70%;
+  text-align: center;
+  border-radius: 15px;
+  
+  
+}
+
+@mixin buttonResponsive(){
+  @include custom(350){
+    width: 70%;
+    font-size: 2rem;
+    padding: 1rem;
+  }
+
+  @include desktop(){
+    width: 80%;
+  }
+  @include custom(1200){
+    width: 60%;
+  }
+
+  &:hover{
+    background-color: #156b96;
+  }
+}
+
+@mixin title(){
+  padding-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h1{
+    font-size: 2.2rem;
+    color: white;
+    @include tablet(){
+      font-size: 3.2rem;
+      margin-bottom: .5rem;
+      margin-top: 0;
+      padding-top: 1rem;
+    }
+
+    @include desktop(){
+      font-size: 4.2rem;
+      
+    }
+  }
+
+  @include desktop(){
+    height: auto  ;
+  }
+}
+
+@mixin subTitle(){
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+
+  @include tablet(){
+    font-size: 2.5rem;
+    padding: 0 10rem
+  }
+
+  @include desktop(){
+    margin-bottom: 6rem;
+  }
+}
+
+@mixin texto(){
+  font-size: 1.6rem;
+
+      @include tablet(){
+        font-size: 2rem;
+        padding: 0 2rem;
+      }
+
+      @include desktop(){
+        // font-size: 2.5rem;
+        max-width: 65%;
+        
+      }
+}
+
+@mixin contenido() {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      
+      @include custom(400){
+        margin: 0 3rem;
+      }
+
+      @include desktop(){
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+      }
+      @include custom(1300){
+        margin-top: 2rem;
+      }
+      
+}

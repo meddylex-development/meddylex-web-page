@@ -1,0 +1,179 @@
+
+<div class="nosotros-container">
+  <main class="main-nosotros">
+    <div class="title">
+      <div class="mountain-anim">
+          <ng-lottie [options] = 'logo'
+                      width = 55px></ng-lottie>
+          <!-- <img src="../../../../assets/icons/MountainsLogoLight.svg" alt="Logo"> -->
+        </div>
+        <!-- <img src="../../../../assets/icons/MountainsLogoLight.svg" alt="Logo"> -->
+      
+      <h1>Nuestro Propósito</h1>
+    </div>
+    <article class="que-hacemos">
+      <div class="contenido">
+        <ng-lottie [options] = 'innovacion'
+                    class="icono"></ng-lottie>
+        <!-- <img src="../../../../assets/icons/5. Lo que hacemos 1.svg" alt="que_hacemos"> -->
+        <div class="texto">
+          <h2 class="subtitle">Democratizamos servicios digitales de calidad</h2>
+          <p class="texto-contenido">El conocimiento y experiencia de nuestra red de expertos, unidos a nuestra innovadora plataforma tecnológica, nos permite ofrecer soluciones online accesibles, oportunas, certeras y confiables en el campo del Derecho Médico y la Medicina Laboral
+          </p>
+        </div>
+        
+      </div>
+      <div class="scroll">
+        <img src="../../../../assets/icons/scroll.svg" alt="scroll">
+        <p>scroll</p>
+      </div>
+    </article>
+
+        
+    <article class="vision propuesta-valor">
+      <div class="contenido">
+        <ng-lottie [options] = 'piramide'
+        class="icono propuesta"></ng-lottie>
+        <!--<img class="piramide" src="../../../../assets/icons/20. Piramide.svg" alt="vision"> -->
+        <div class="texto">
+          <h2>¿ Quienes Somos ?</h2>
+          <h3 class="subtitle">Somos una red interdisciplinaria de expertos con amplia trayectoria y reconocimiento en Derecho Médico y Medicina Laboral</h3>
+          <p class="texto-contenido">
+            Integramos experiencia jurídica y médica tradicionales a plataformas de software que despliegan automáticamente modelos de análisis coherentes, predictivos y confiables para atender las necesidades de los usuarios, prestadores de servicios y supervisores del Sistema General de Seguridad Social
+          </p>
+        </div>
+        
+      </div>
+      <div class="scroll">
+        <img src="../../../../assets/icons/scroll.svg" alt="scroll">
+        <p>scroll</p>
+      </div>
+    </article>
+
+    <article class="mision">
+      <div class="contenido">
+        <ng-lottie [options] = 'mision'
+        class="icono"></ng-lottie>
+        <!-- <img src="../../../../assets/icons/6. Mision.svg" alt="mision"> -->
+        <div class="texto">
+          <h2>Misión - TEXTO SLT</h2>
+          <h3 class="subtitle">Crear tecnologías de alto impacto en el desarrollo humano</h3>
+          <p class="texto-contenido">Perseveramos en cualificar nuestra habilidad para diseñar e implementar nuevas formas de prestación de servicios jurídicos que tengan un alto y positivo impacto en la calidad de vida de las personas
+          </p>
+        </div>
+        
+      </div>
+      <div class="scroll">
+        <img src="../../../../assets/icons/scroll.svg" alt="scroll">
+        <p>scroll</p>
+      </div>
+    </article>
+  
+    <article class="vision">
+      <div class="contenido">
+        <ng-lottie [options] = 'vision'
+        class="icono"></ng-lottie>
+        <!-- <img src="../../../../assets/icons/7. Vision.svg" alt="vision"> -->
+        <div class="texto">
+          <h2>Visión - TEXTO SLT</h2>
+          <h3 class="subtitle">Ser la empresa de inteligencia jurídica artificial preferida globalmente</h3>
+          <p class="texto-contenido">Proyectamos ser la empresa de inteligencia jurídica artificial preferida por sus propuestas de valor generadas por el esfuerzo conjunto de mentes creativas inspiradas, apoyadas en innovadoras infraestructuras informáticas
+          </p>
+        </div>
+        
+      </div>
+      <div class="scroll">
+        <img src="../../../../assets/icons/scroll.svg" alt="scroll">
+        <p>scroll</p>
+      </div>
+    </article>
+
+
+
+    <article class="val-pri">
+      <div class="contenedor">
+        <div class="valores-container">
+          <h2>Valores Corporativos</h2>
+          <div class="valores">
+
+            <div (click)="activarDropDownV('solidaridad')" class="drop-button ">
+              <img class="pulsate-bck" src="../../../../assets/icons/11. Solidaridad 1.svg" alt="solidaridad">
+              <p>Transparencia</p>
+            </div>  
+
+            <div (click)="activarDropDownV('respeto')" class="drop-button">
+              <img class="pulsate-bck" src="../../../../assets/icons/8. Respeto.svg" alt="respeto">
+              <p>Excelencia</p>
+            </div>
+
+            <div (click)="activarDropDownV('integridad')" class="drop-button">
+              <img class="pulsate-bck" src="../../../../assets/icons/9. Integridad.svg" alt="integridad">
+              <p>Respeto</p>
+            </div>
+
+            <div (click)="activarDropDownV('disciplina')" class="drop-button">
+              <img class="pulsate-bck" src="../../../../assets/icons/10. Disciplina.svg" alt="disciplina">
+              <p>Solidaridad</p>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <div [class]="dropdown_classV">
+        <div class="contenedor">
+          <h4>{{dropDownTitle}}</h4>
+          <p>{{dropDownContent}}</p>
+        </div>
+      </div>
+
+      <div class="contenedor">
+        <div class="principios-container">
+          <h2>Principios Empresariales - TEXTO SLT</h2>
+          <div class="principios">
+
+            <div class="drop-button" (click)= "activarDropDownP('conocimiento')">
+              <img class="pulsate-bck" src="../../../../assets/icons/12. Conocimiento en accion.svg" alt="conocimiento">
+              <p>Conocimiento en Acción</p>
+            </div>
+
+            <div class="drop-button" (click)= "activarDropDownP('innovacion')">
+              <img class="pulsate-bck" src="../../../../assets/icons/13. Innovacion.svg" alt="innovación">
+              <p>Innovación Social</p>
+            </div>
+
+            <div class="drop-button" (click)= "activarDropDownP('seguridad')">
+              <img class="pulsate-bck" src="../../../../assets/icons/14. Seguridad.svg" alt="seguridad">
+              <p>Seguridad</p>
+            </div>
+
+            <div class="drop-button" (click)= "activarDropDownP('confidencialidad')">
+              <img class="pulsate-bck" src="../../../../assets/icons/15. Confidencialidad.svg" alt="confidencialidad">
+              <p>Confidencialidad</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div [class]="dropdown_classP">
+        <div class="contenedor">
+          <h4>{{dropDownTitle}}</h4>
+          <p>{{dropDownContent}}</p>
+        </div>
+      </div>
+
+      <!-- <div class="scroll">
+        <img src="../../../../assets/icons/scroll.svg" alt="scroll">
+        <p>scroll</p>
+      </div> -->
+    </article>
+    
+    
+
+  </main>
+  
+</div>
+
+
+

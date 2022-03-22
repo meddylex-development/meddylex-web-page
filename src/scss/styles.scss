@@ -1,0 +1,23 @@
+
+//? NORMALIZE Y SNIPPET PAUL IRISH
+@forward 'reset';
+// ?--------------------------
+
+@forward 'font-styles';
+@forward  'utilities';
+
+@forward 'animations';
+
+// ?HEADER este es el header
+@forward 'modules/header';
+
+
+// ? Pages
+@forward  'modules/home';
+@forward  'modules/nosotros';
+@forward  'modules/portafolio';
+@forward  'modules/equipo';
+@forward  'modules/contacto';
+
+// ? Footer
+@forward  'modules/footer';

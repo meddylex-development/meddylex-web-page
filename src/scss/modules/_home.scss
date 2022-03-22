@@ -1,0 +1,480 @@
+
+@use '../variables' as *;
+@use '../mixins' as *;
+
+
+
+.hero{
+  color: white;
+  padding-top: 5rem;
+  background: linear-gradient(180deg, #3060a8 0%, #c078d8 100%);
+
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    justify-content: space-around;
+
+    @include desktop(){
+      min-height: 100vh;
+      padding-bottom: 2% ;
+    }
+
+    .scroll{
+      @include desktop(){
+        margin-bottom: 6rem;
+      }
+    }
+  }
+
+  @include desktop(){
+    min-height: 100vh;
+  }
+}
+
+
+.title {
+
+  @include title();
+
+}
+
+.contenido {
+  p{
+    text-align: center;
+    font-size: 1.6rem;
+    max-width: 37.6rem;
+
+    @include tablet(){
+      font-size: 2rem;
+      max-width: 60rem;
+    }
+
+    @include desktop(){
+      // font-size: 2.5rem;
+      font-size: 2.4rem;
+      margin: 0 1rem;
+      padding: 1rem 5rem;
+      max-width: none;
+    }
+  }
+}
+
+
+
+.card{
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  padding: 4rem;
+  background: rgba(0, 0, 0, 0.35);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+.card p {
+  font-size: 1.6rem;
+  text-align: center;
+  margin: 1rem 7rem 1rem 7rem !important;
+}
+
+  @include desktop(){
+    flex-basis: calc(50% - 10rem);
+    min-width: 35.5rem;
+    margin-bottom: 0;
+    // background-color: transparent;
+  }
+
+
+  img{
+
+    border-radius: 50px;
+    // box-shadow: 0px 4px 70px rgba(255, 255, 255, 0.25);
+
+    @include desktop(){
+      margin: 2%;
+    }
+  }
+
+  p{
+    font-size: 1.6rem;
+    text-align: center;
+
+
+    // @include tablet(){
+    //   font-size: 2rem;
+    // }
+
+    // @include desktop(){
+    //   min-height: 9rem;
+    //   max-width: 41.5rem;
+    //   font-size: 2rem;
+    //   margin-bottom: 0;
+    //   padding: 0 2rem;
+    // }
+  }
+
+
+
+  a{
+    width: 80%;
+
+    @include buttonBlue();
+    margin-top: 1rem;
+    padding: 5%;
+    transition: 0.2s ease-in ;
+
+    @include buttonResponsive();
+
+    @include desktop(){
+      margin-top: 0;
+    }
+  }
+
+}
+
+.cards-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include desktop(){
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
+main.main-home{
+
+  color: white;
+  background: linear-gradient(180deg, #c078d8 0%, #3060a8 100%);
+
+  article {
+    margin: 0 2rem;
+    padding-top: 5rem;
+    display: flex;
+    // justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+
+    @include custom(1400){
+      margin: 0 30rem;
+    }
+    // @include custom(1700){
+    //   padding-top: 0;
+    // }
+
+    .contenido{
+      @include contenido();
+
+      .icono{
+        margin: 2% auto;
+        width: 60%;
+        max-width: 20rem;
+
+        @include custom(500){
+          width: 50%;
+        }
+
+        @include tablet(){
+          width: 40%;
+        }
+
+        @include desktop(){
+          margin: 0;
+          padding: 2%;
+          max-width: 25rem;
+          // order: 2;
+        }
+
+        @include custom(1200){
+          max-width: 25rem;
+        }
+        @include custom(1500){
+          margin-right: 4rem;
+          max-width: 28rem;
+        }
+
+      }
+
+      p{
+        @include desktop(){
+          padding-right: 2rem;
+
+        }
+      }
+
+
+
+    }
+
+    h2{
+
+      @include subTitle();
+
+      &.servicios{
+        @include desktop(){
+          margin-bottom: 1rem;
+          margin-top: 5rem;
+        }
+      }
+    }
+
+    .button{
+      margin-top: 1rem;
+      width: 100%;
+
+
+      @include tablet(){
+        width: 45%;
+
+      }
+      @include desktop(){
+        width: auto;
+      }
+    }
+
+    @include desktop(){
+      // margin: 0
+    }
+
+    a.boton{
+      @include buttonBlue();
+      padding: 1rem;
+      width: 70%;
+      margin: 0 auto;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+
+      @include custom(400){
+        max-width: 32rem;
+      }
+
+      @include custom(500){
+        padding: 3%;
+      }
+
+      @include tablet(){
+        font-size: 2rem;
+
+      }
+      @include desktop(){
+        width: 25rem;
+        padding: 5% 0;
+        margin-top: 0;
+        margin-left: 2rem;
+      }
+
+
+    }
+
+    p.texto-contenido{
+      font-size: 1.6rem;
+      padding: 0 1rem;
+
+      @include tablet(){
+        font-size: 2rem;
+        padding: 0 2rem;
+      }
+
+      @include desktop(){
+        // font-size: 2.5rem;
+        font-size: 2rem;
+        max-width: 65%;
+        padding-left: 5rem;
+      }
+    }
+    .button{
+      @include desktop(){
+        align-self: flex-start;
+        margin-left: 8rem;
+        margin-bottom: 8rem;
+      }
+
+      @include custom(1100){
+        margin-left: 10rem;
+      }
+
+      @include custom(1400){
+        margin-left: 7rem;
+      }
+
+      @include custom(1800){
+        margin-left: 9rem;
+      }
+
+
+    }
+    &:nth-child(1){
+
+      @include desktop(){
+        padding-top: 10rem;
+      }
+
+      .icono{
+        order: 2;
+      }
+      p{
+        text-align: left;
+      }
+
+
+      .scroll{
+        p{
+          text-align: center;
+        }
+        @include desktop(){
+          margin: 0;
+          margin-top: 10%;
+        }
+        @include custom(1100){
+          // margin-top: 10%;
+        }
+
+      }
+
+    }
+
+    &:nth-child(2){
+      margin-top: 4rem;
+      padding-bottom: 15%;
+
+      .icono{
+        order: 2;
+      }
+      p{
+        text-align: left;
+      }
+      // .button{
+      //   @include desktop(){
+      //     align-self: flex-start;
+      //     margin-left: 8%;
+      //     margin-bottom: 4rem;
+      //   }
+      //   @include custom(1500){
+      //     margin-left: 6%;
+      //   }
+      // }
+
+      @include desktop(){
+        min-height: 100vh;
+        padding-bottom: 0;
+
+
+        .scroll{
+          margin-top: 10rem;
+        }
+      }
+
+      @include custom(1700){
+        margin-top: 0;
+        padding-top: 0;
+
+      }
+
+    }
+
+    @include desktop(){
+      min-height: 100vh;
+
+
+
+    }
+
+  }
+
+  .aliados-section{
+    @include tablet(){
+      padding-bottom: 15rem;
+
+    }
+
+  }
+
+  .aliados-container{
+
+    height: auto;
+    margin: 0 2rem;
+    margin-top: 0;
+    padding: 0 1rem;
+    padding-bottom: 15rem;
+
+
+    @include tablet(){
+      margin: 0;
+      padding: 2rem 3rem;
+      background-color: rgba(0,0,0,0.35);
+
+    }
+
+    @include desktop(){
+    margin-top: 0;
+      padding: 2rem 10rem;
+    }
+
+    .aliados{
+      width: 100%;
+    }
+
+    h3{
+      color : white;
+      font-size: 1.8rem;
+    }
+
+    img{
+
+      max-width: 70%;
+      margin: 2rem 0;
+      margin-bottom: 2rem;
+      @include custom(400){
+        max-width: 22rem;
+      }
+
+      @include tablet(){
+        padding-bottom: 2rem;
+      }
+
+
+    }
+
+    .logos{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @include tablet(){
+        flex-direction: row;
+        justify-content: space-around;
+      }
+
+      div{
+        text-align: center;
+
+        @include custom(1800){
+
+          &:nth-child(1){
+            margin-left: 15rem;
+          }
+          &:nth-child(3){
+            margin-right: 15rem;
+          }
+
+        }
+
+        p{
+
+          color: white;
+          font-size: 1.6rem;
+
+          @include desktop(){
+            margin-top: 0;
+          }
+        }
+
+      }
+
+    }
+  }
+
+}
