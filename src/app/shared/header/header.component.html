@@ -2,20 +2,20 @@
   <div class="header container">
     <div class="logo">
       <a routerLink = "home">
-        <img src="../../../assets/icons/Logo.png" alt="Light_Logo">
+        <img src="../../../assets/icons/Logo.png" width="200" alt="Light_Logo">
       </a>
     </div>
-    
+
     <span class="spacer"></span>
-  
+
     <!-- BURGER MENU -->
     <div #open class="burger-button"
-                
+
                 (click) = "burgerButton()">
                 <img src="../../../assets/icons/BurgerIcon.svg" alt="Burger_Button">
     </div>
     <div class="burger-menu-container"></div>
-    
+
     <!-- EXPANDED MENU-->
     <nav class="navbar">
       <a routerLink ="home"
@@ -29,7 +29,7 @@
       <a routerLink = "contacto"
       routerLinkActive = "active">Contacto</a>
     </nav>
-    
+
     <div #mobile_menu class="mobile-menu">
       <div class="close-button-container">
         <div #close class="close-button"
@@ -40,7 +40,7 @@
       <nav class = "mobile-nav">
         <a routerLink ="home"
           routerLinkActive="active"
-          (click) = "closeMenuButton()"> 
+          (click) = "closeMenuButton()">
           <img src="../../../assets/icons/HomeIcon.svg" alt="Home_icon">Inicio</a>
         <a routerLink ="nosotros"
           routerLinkActive="active"
@@ -60,7 +60,7 @@
           routerLinkActive = "active"
           (click) = "closeMenuButton()">
           <img src="../../../assets/icons/contacto_icon.svg" alt="contacto_icon">Contacto</a>
-        
+
         <div class="mountain-logo">
           <!-- <img src="../../../assets/icons/PiramideConocimientoLight.svg" alt="Piramide_Conocimiento"> -->
           <div class="mountain-anim">
@@ -71,10 +71,10 @@
         </div>
 
       </nav>
-      
+
     </div>
 
-    
+
   </div>
 
 </header>
