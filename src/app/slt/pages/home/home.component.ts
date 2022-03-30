@@ -33,7 +33,7 @@ export class HomeComponent {
   valores: any = 
     { 
       
-      Emisión_incapacidad:{
+      Emision_incapacidad:{
         titulo: "Emisión incapacidad",
         contenido : "Entendemos que el interés común prevalece sobre el particular, nos adherimos a los principios de desarrollo sostenible, estamos dispuestos a colaborar con los demás por el beneficio común, y obramos en consecuencia"
       },
@@ -60,6 +60,16 @@ export class HomeComponent {
 
       Identificacion_presuntos_Abusos_derecho:{
         titulo: "Identificación presuntos Abusos del derecho",
+        contenido: "Somos autoexigentes, ordenados y perseverantes. Agregamos un esfuerzo extra para convertir los retos y metas en logros y alcanzar la excelencia como práctica habitual"
+      },
+
+      E_RETHUS:{
+        titulo: "E-RETHUS",
+        contenido: "Somos autoexigentes, ordenados y perseverantes. Agregamos un esfuerzo extra para convertir los retos y metas en logros y alcanzar la excelencia como práctica habitual"
+      },
+
+      Business_Intelligence:{
+        titulo: "Business Intelligence",
         contenido: "Somos autoexigentes, ordenados y perseverantes. Agregamos un esfuerzo extra para convertir los retos y metas en logros y alcanzar la excelencia como práctica habitual"
       }
 
