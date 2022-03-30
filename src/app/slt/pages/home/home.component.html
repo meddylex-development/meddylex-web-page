@@ -1,12 +1,9 @@
-
-
 <div class="hero">
 
   <div class="title">
 
     <div class="mountain-anim">
-      <ng-lottie [options] = 'logo'
-                  width = 55px></ng-lottie>
+      <ng-lottie [options]='logo' width=55px></ng-lottie>
       <!-- <img src="../../../../assets/icons/MountainsLogoLight.svg" alt="Logo"> -->
     </div>
 
@@ -24,13 +21,16 @@
 
     <div class="cards-container">
       <div class="card">
-        <img src="../../../../assets/icons/doctor.png" style="background: #fff !important;width: 9rem !important;padding: 8px !important;" alt="tecnologias_cognitivas">
+        <img src="../../../../assets/icons/doctor.png"
+          style="background: #fff !important;width: 9rem !important;padding: 8px !important;"
+          alt="tecnologias_cognitivas">
         <p>Medicina Laboral</p>
         <a href="#Medicina">Saber más</a>
       </div>
       &nbsp;
       <div class="card">
-        <img src="../../../../assets/icons/consultoria.png" style="background: #fff !important;width: 9rem !important;padding: 8px !important;"  alt="nuevos_modelos">
+        <img src="../../../../assets/icons/consultoria.png"
+          style="background: #fff !important;width: 9rem !important;padding: 8px !important;" alt="nuevos_modelos">
         <p>Consultoría</p>
         <a href="#Consultoria">Saber más</a>
       </div>
@@ -75,18 +75,78 @@
 
 <main class="main-home">
   <article class="tecnologias-cognitivas" id="Medicina">
-    <h2>MEDICINA LABORAL</h2>
-    <div class="contenido">
-      <ng-lottie [options]="tecnologiasCognitivas" class="icono"></ng-lottie>
-      <!-- <img class="icono" src="../../../../assets/icons/4. Tecnologias2 2.svg" alt="tecnologias"> -->
-      <p class="texto-contenido">
-        Integramos experiencia jurídica y médica tradicionales a plataformas de software que despliegan automáticamente modelos de análisis coherentes, predictivos y confiables para atender las necesidades de los usuarios, prestadores de servicios y supervisores del Sistema General de Seguridad Social
-      </p>
+
+    <div class="nosotros-containerf">
+
+      <h2>MEDICINA LABORAL</h2>
+      <div class="contenido">
+        <ng-lottie [options]="tecnologiasCognitivas" class="icono"></ng-lottie>
+        <!-- <img class="icono" src="../../../../assets/icons/4. Tecnologias2 2.svg" alt="tecnologias"> -->
+        <p class="texto-contenido">
+          Integramos experiencia jurídica y médica tradicionales a plataformas de software que despliegan
+          automáticamente
+          modelos de análisis coherentes, predictivos y confiables para atender las necesidades de los usuarios,
+          prestadores de servicios y supervisores del Sistema General de Seguridad Social
+        </p>
+      </div>
+
+
+
+      <article class="val-pri">
+        <div class="valores-container">
+
+          <div class="valores">
+            <div (click)="activarDropDownV('Emisión_incapacidad')" class="drop-button ">
+              <img class="pulsate-bck" src="../../../../assets/icons/11. Solidaridad 1.svg" alt="solidaridad">
+              <p>Emisión incapacidad</p>
+            </div>
+
+            <div (click)="activarDropDownV('Concepto_rehabilitacion')" class="drop-button">
+              <img class="pulsate-bck" src="../../../../assets/icons/8. Respeto.svg" alt="respeto">
+              <p>Concepto rehabilitación</p>
+            </div>
+
+            <div (click)="activarDropDownV('Calificacion_origen')" class="drop-button">
+              <img class="pulsate-bck" src="../../../../assets/icons/9. Integridad.svg" alt="integridad">
+              <p>Calificación de origen</p>
+            </div>
+          </div>
+
+          <div class="valores">
+            <div (click)="activarDropDownV('Calificacion_PCL')" class="drop-button">
+              <img class="pulsate-bck" src="../../../../assets/icons/10. Disciplina.svg" alt="disciplina">
+              <p>Calificación de PCL</p>
+            </div>
+
+            <div (click)="activarDropDownV('Auditoria_Incapacidades_Prolongadas')" class="drop-button">
+              <img class="pulsate-bck" src="../../../../assets/icons/10. Disciplina.svg" alt="disciplina">
+              <p>Auditoria Incapacidades Prolongadas</p>
+            </div>
+
+            <div (click)="activarDropDownV('Identificacion_presuntos_Abusos_derecho')" class="drop-button">
+              <img class="pulsate-bck" src="../../../../assets/icons/10. Disciplina.svg" alt="disciplina">
+              <p>Identificación presuntos Abusos del derecho</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div [class]="dropdown_classV">
+          <div class="contenedor">
+            <h4>{{dropDownTitle}}</h4>
+            <p>{{dropDownContent}}</p>
+          </div>
+        </div>
+
+      </article>
     </div>
 
+
+
+
+
     <div class="button">
-      <a routerLink = "../portafolio" class="boton"
-      routerLinkActive = "active">Ver servicios</a>
+      <a routerLink="../portafolio" class="boton" routerLinkActive="active">Ver plataforma</a>
     </div>
 
     <div class="scroll">
@@ -98,18 +158,17 @@
   <article class="nuevos-modelos" id="Consultoria">
     <h2 class="servicios">CONSULTORÍA</h2>
     <div class="contenido">
-      <ng-lottie [options] = 'serviciosJuridicos'
-                  class="icono"></ng-lottie>
+      <ng-lottie [options]='serviciosJuridicos' class="icono"></ng-lottie>
       <!-- <img class="icono" src="../../../../assets/icons/3. Nuevos  Modelos2 1.svg" alt="modelos"> -->
-      <p  class="texto-contenido">
-        A través de nuestra red interdisciplinaria de expertos colaboramos en la identificación de las causas de desafíos y problemas específicos y en la definición de las pautas para encontrar la mejor solución
+      <p class="texto-contenido">
+        A través de nuestra red interdisciplinaria de expertos colaboramos en la identificación de las causas de
+        desafíos y problemas específicos y en la definición de las pautas para encontrar la mejor solución
       </p>
 
     </div>
 
     <div class="button">
-      <a routerLink = "../portafolio" class="boton"
-          routerLinkActive = "active">Ver servicios</a>
+      <a routerLink="../portafolio" class="boton" routerLinkActive="active">Ver plataforma</a>
     </div>
 
     <div class="scroll">
@@ -119,20 +178,20 @@
 
   </article>
 
-    <article class="tecnologias-cognitivas" id="Asesoria">
+  <article class="tecnologias-cognitivas" id="Asesoria">
     <h2>ASESORÍA</h2>
     <div class="contenido">
-      <ng-lottie [options] = 'tecnologiasCognitivas'
-      class="icono"></ng-lottie>
+      <ng-lottie [options]='tecnologiasCognitivas' class="icono"></ng-lottie>
       <!-- <img class="icono" src="../../../../assets/icons/4. Tecnologias2 2.svg" alt="tecnologias"> -->
       <p class="texto-contenido">
-        A partir de la supervisión y el análisis continuo de la información brindamos soporte y consejo profesional especializado y efectivo en la optimización del crecimiento y rendimiento empresarial y en la prevención de los riesgos jurídicos inherentes al ejercicio de la medicina
+        A partir de la supervisión y el análisis continuo de la información brindamos soporte y consejo profesional
+        especializado y efectivo en la optimización del crecimiento y rendimiento empresarial y en la prevención de los
+        riesgos jurídicos inherentes al ejercicio de la medicina
       </p>
     </div>
 
     <div class="button">
-      <a routerLink = "../portafolio" class="boton"
-      routerLinkActive = "active">Ver servicios</a>
+      <a routerLink="../portafolio" class="boton" routerLinkActive="active">Ver plataforma</a>
     </div>
 
     <div class="scroll">
@@ -145,17 +204,17 @@
   <article class="tecnologias-cognitivas" id="Auditoria">
     <h2>AUDITORÍA</h2>
     <div class="contenido">
-      <ng-lottie [options] = 'serviciosJuridicos'
-                  class="icono"></ng-lottie>
+      <ng-lottie [options]='serviciosJuridicos' class="icono"></ng-lottie>
       <!-- <img class="icono" src="../../../../assets/icons/4. Tecnologias2 2.svg" alt="tecnologias"> -->
       <p class="texto-contenido">
-        Mediante exhaustivas y probadas metodologías implementadas en plataformas tecnológicas de última generación realizamos mediciones, análisis y valoraciones independientes y rigurosas en los ámbitos médico, jurídico y contable
+        Mediante exhaustivas y probadas metodologías implementadas en plataformas tecnológicas de última generación
+        realizamos mediciones, análisis y valoraciones independientes y rigurosas en los ámbitos médico, jurídico y
+        contable
       </p>
     </div>
 
     <div class="button">
-      <a routerLink = "../portafolio" class="boton"
-      routerLinkActive = "active">Ver servicios</a>
+      <a routerLink="../portafolio" class="boton" routerLinkActive="active">Ver plataforma</a>
     </div>
 
     <div class="scroll">
@@ -168,17 +227,17 @@
   <article class="tecnologias-cognitivas" id="Peritaje">
     <h2>PERITAJE</h2>
     <div class="contenido">
-      <ng-lottie [options] = 'tecnologiasCognitivas'
-      class="icono"></ng-lottie>
+      <ng-lottie [options]='tecnologiasCognitivas' class="icono"></ng-lottie>
       <!-- <img class="icono" src="../../../../assets/icons/4. Tecnologias2 2.svg" alt="tecnologias"> -->
       <p class="texto-contenido">
-        Nuestra red de expertos cuenta con peritos que poseen la aptitud e idoneidad técnica y científica para emitir conceptos fundados, claros, concisos y razonados acerca del estado de salud, las lesiones y daños originados en la negligencia en el ejercicio de la medicina
+        Nuestra red de expertos cuenta con peritos que poseen la aptitud e idoneidad técnica y científica para emitir
+        conceptos fundados, claros, concisos y razonados acerca del estado de salud, las lesiones y daños originados en
+        la negligencia en el ejercicio de la medicina
       </p>
     </div>
 
     <div class="button">
-      <a routerLink = "../portafolio" class="boton"
-      routerLinkActive = "active">Ver servicios</a>
+      <a routerLink="../portafolio" class="boton" routerLinkActive="active">Ver plataforma</a>
     </div>
 
     <div class="scroll">
@@ -191,17 +250,17 @@
   <article class="tecnologias-cognitivas" id="Capacitacion">
     <h2>CAPACITACIÓN</h2>
     <div class="contenido">
-      <ng-lottie [options] = 'serviciosJuridicos'
-                  class="icono"></ng-lottie>
+      <ng-lottie [options]='serviciosJuridicos' class="icono"></ng-lottie>
       <!-- <img class="icono" src="../../../../assets/icons/4. Tecnologias2 2.svg" alt="tecnologias"> -->
       <p class="texto-contenido">
-        Proveemos cursos virtuales prácticos en los se analizan casos reales que facilitan la consolidación de competencias y destrezas que ayudan a mitigar el impacto de los riesgos jurídicos inherentes al ejercicio de las ciencias de la salud
+        Proveemos cursos virtuales prácticos en los se analizan casos reales que facilitan la consolidación de
+        competencias y destrezas que ayudan a mitigar el impacto de los riesgos jurídicos inherentes al ejercicio de las
+        ciencias de la salud
       </p>
     </div>
 
     <div class="button">
-      <a routerLink = "../portafolio" class="boton"
-      routerLinkActive = "active">Ver servicios</a>
+      <a routerLink="../portafolio" class="boton" routerLinkActive="active">Ver plataforma</a>
     </div>
 
     <div class="scroll">
@@ -217,18 +276,18 @@
         <h3>Alianzas:</h3>
         <div class="logos">
 
-            <div>
-              <img src="../../../../assets/icons/21. Bancolombia.png" alt="Bancolombia">
-            </div>
+          <div>
+            <img src="../../../../assets/icons/21. Bancolombia.png" alt="Bancolombia">
+          </div>
 
 
-            <div>
-              <img src="../../../../assets/icons/22. Davivienda.png" alt="Davivienda">
-            </div>
+          <div>
+            <img src="../../../../assets/icons/22. Davivienda.png" alt="Davivienda">
+          </div>
 
-            <div>
-              <img src="../../../../assets/icons/23. Fiduciaria.png" alt="Fiduciaria">
-            </div>
+          <div>
+            <img src="../../../../assets/icons/23. Fiduciaria.png" alt="Fiduciaria">
+          </div>
 
 
         </div>
@@ -239,4 +298,3 @@
 
 
 </main>
-
