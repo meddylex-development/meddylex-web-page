@@ -76,7 +76,7 @@
 <main class="main-home">
   <article class="tecnologias-cognitivas" id="Medicina">
 
-    <div class="nosotros-containerf">
+    <div class="nosotros-container-home">
 
       <h2>MEDICINA LABORAL</h2>
       <div class="contenido">
@@ -93,10 +93,113 @@
 
 
       <article class="val-pri">
-        <div class="valores-container">
+
+        <div class="contenedor">
+          <div class="valores-container">
+            <h2>Valores Corporativos</h2>
+            <div class="valores">
+
+              <div (click)="activarDropDownV('solidaridad')" class="drop-button ">
+                <img class="pulsate-bck" src="../../../../assets/icons/11. Solidaridad 1.svg" alt="solidaridad">
+                <p style="text-align: center;">Emisión incapacidad</p>
+              </div>
+
+              <div (click)="activarDropDownV('respeto')" class="drop-button">
+                <img class="pulsate-bck" src="../../../../assets/icons/8. Respeto.svg" alt="respeto">
+                <p style="text-align: center;">Concepto rehabilitación</p>
+              </div>
+
+              <div (click)="activarDropDownV('integridad')" class="drop-button">
+                <img class="pulsate-bck" src="../../../../assets/icons/9. Integridad.svg" alt="integridad">
+                <p style="text-align: center;">Calificación de origen</p>
+              </div>
+
+              <!-- <div (click)="activarDropDownV('disciplina')" class="drop-button">
+                <img class="pulsate-bck" src="../../../../assets/icons/10. Disciplina.svg" alt="disciplina">
+                <p style="text-align: center;">Solidaridad</p>
+              </div> -->
+
+            </div>
+          </div>
+        </div>
+
+        <div class="contenedor">
+          <div class="valores-container">
+            <h2>Valores Corporativos</h2>
+            <div class="valores">
+
+              <div (click)="activarDropDownV('solidaridad')" class="drop-button ">
+                <img class="pulsate-bck" src="../../../../assets/icons/11. Solidaridad 1.svg" alt="solidaridad">
+                <p style="text-align: center;">Calificación de PCL</p>
+              </div>
+
+              <div (click)="activarDropDownV('respeto')" class="drop-button">
+                <img class="pulsate-bck" src="../../../../assets/icons/8. Respeto.svg" alt="respeto">
+                <p style="text-align: center;">Auditoria Incapacidades Prolongadas</p>
+              </div>
+
+              <div (click)="activarDropDownV('integridad')" class="drop-button">
+                <img class="pulsate-bck" src="../../../../assets/icons/9. Integridad.svg" alt="integridad">
+                <p style="text-align: center;">Identificación presuntos Abusos del derecho</p>
+              </div>
+
+              <!-- <div (click)="activarDropDownV('disciplina')" class="drop-button">
+                <img class="pulsate-bck" src="../../../../assets/icons/10. Disciplina.svg" alt="disciplina">
+                <p style="text-align: center;">Solidaridad</p>
+              </div> -->
+
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid" style="width: 70%;" *ngIf="false">
+          <div class="row" style="display: flex; justify-content: space-between;">
+            <div class="col" style="display: flex;align-items: end; text-align: center;">
+              <div (click)="activarDropDownV('Emisión_incapacidad')" class="drop-button">
+                <img class="pulsate-bck" width="130" src="../../../../assets/icons/11. Solidaridad 1.svg" alt="solidaridad">
+                <h1>Emisión incapacidad</h1>
+              </div>
+            </div>
+            <div class="col" style="display: flex;align-items: end; text-align: center;">
+              <div (click)="activarDropDownV('Concepto_rehabilitacion')" class="drop-button">
+                <img class="pulsate-bck" width="130" src="../../../../assets/icons/8. Respeto.svg" alt="respeto">
+                <h1>Concepto rehabilitación</h1>
+              </div>
+            </div>
+            <div class="col" style="display: flex;align-items: end; text-align: center;">
+              <div (click)="activarDropDownV('Calificacion_origen')" class="drop-button">
+                <img class="pulsate-bck" width="130" src="../../../../assets/icons/9. Integridad.svg" alt="integridad">
+                <h1>Calificación de origen</h1>
+              </div>
+            </div>
+          </div>
+          <div class="row" style="display: flex; justify-content: space-between;">
+            <div class="col" style="display: flex;align-items: end; text-align: center;">
+              <div (click)="activarDropDownV('Calificacion_PCL')" class="drop-button">
+                <img class="pulsate-bck" width="130" src="../../../../assets/icons/10. Disciplina.svg" alt="disciplina">
+                <h1>Calificación de PCL</h1>
+              </div>
+            </div>
+            <div class="col" style="display: flex;align-items: end; text-align: center;">
+              <div (click)="activarDropDownV('Auditoria_Incapacidades_Prolongadas')" class="drop-button">
+                <img class="pulsate-bck" width="130" src="../../../../assets/icons/10. Disciplina.svg" alt="disciplina">
+                <h1>Auditoria Incapacidades<br>Prolongadas</h1>
+              </div>
+            </div>
+            <div class="col" style="display: flex;align-items: end; text-align: center;">
+              <div (click)="activarDropDownV('Identificacion_presuntos_Abusos_derecho')" class="drop-button">
+                <img class="pulsate-bck" width="130" src="../../../../assets/icons/10. Disciplina.svg" alt="disciplina">
+                <h1>Identificación presuntos<br>Abusos del derecho</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="valores-container" *ngIf="false">
 
           <div class="valores">
-            <div (click)="activarDropDownV('Emisión_incapacidad')" class="drop-button ">
+            <div (click)="activarDropDownV('Emisión_incapacidad')" class="drop-button">
               <img class="pulsate-bck" src="../../../../assets/icons/11. Solidaridad 1.svg" alt="solidaridad">
               <p>Emisión incapacidad</p>
             </div>

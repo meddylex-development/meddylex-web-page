@@ -479,10 +479,14 @@ main.main-home{
 
 }
 
-.nosotros-container {
+.nosotros-container-home {
   padding-top: 5rem !important;
-  background: linear-gradient(180deg, #3060a8 0%, #c078d8 100%);
+  // background: linear-gradient(180deg, #3060a8 0%, #c078d8 100%);
   color: white;
+
+  p{
+    text-align: center;
+  }
 
   article{
     position: unset;
@@ -505,16 +509,13 @@ main.main-home{
       margin: 0 8rem
     }
 
-
-
     h2,h3{
-  
+
       @include subTitle();
-      
+
       margin-top: 2rem;
       text-align: left;
       margin-left: 2rem;
-
 
       @include tablet(){
         padding: 0 0 0 2rem;
@@ -526,18 +527,15 @@ main.main-home{
         margin-bottom: 3rem;
         align-self: flex-start;
       }
-      
-      
 
-      
+
+
+
     }
 
-    
-
     .contenido{
-      
+
       @include contenido();
-      
 
       .texto{
 
@@ -563,9 +561,9 @@ main.main-home{
           margin-right: 2%;
         }
 
-        
-        
-        
+
+
+
       }
 
       .icono{
@@ -629,10 +627,10 @@ main.main-home{
       margin-top: 1rem;
       width: 80%;
 
-      
+
       @include tablet(){
         width: 45%;
-        
+
       }
       @include desktop(){
         width: auto;
@@ -646,7 +644,7 @@ main.main-home{
       margin: 0 auto;
       margin-top: 2rem;
       margin-bottom: 2rem;
-      
+
       @include custom(400){
         max-width: 32rem;
       }
@@ -657,18 +655,15 @@ main.main-home{
 
       @include tablet(){
         font-size: 2rem;
-        
+
       }
       @include desktop(){
         width: 25rem;
         padding: 5% 0;
       }
-      
-      
-    }
 
-    
-    
+
+    }
 
     .scroll{
       margin-top: 8rem;
@@ -680,7 +675,7 @@ main.main-home{
         font-size: 1.4rem;
       }
     }
-    
+
 
     &.mision{
       padding-top: 5rem;
@@ -719,13 +714,13 @@ main.main-home{
           margin: 0;
         }
       }
-      
+
     }
 
     &.vision{
       height: auto;
       padding-top: 2rem;
-      
+
       @include desktop(){
         min-height: 100vh;
 
@@ -740,7 +735,7 @@ main.main-home{
       }
 
       @include custom(1700){
-        height: 90vh;  
+        height: 90vh;
       }
     }
 
@@ -754,7 +749,7 @@ main.main-home{
         padding-top: 10rem;
         padding-bottom: 25rem;
       }
-      
+
       .contenedor{
         margin: 0 2rem;
       }
@@ -776,7 +771,7 @@ main.main-home{
           padding: 3rem 4rem;
         }
 
-      
+
         h2{
           text-align: center;
           margin-left: 0;
@@ -787,11 +782,11 @@ main.main-home{
           display: flex;
           flex-wrap: wrap;
           align-items: center;
-          justify-content: center;
+          justify-content: space-between;
 
           @include desktop(){
             flex-wrap: nowrap;
-            
+
 
 
           }
@@ -799,7 +794,7 @@ main.main-home{
           div {
             flex-basis: calc(50% - 1rem);
             text-align: center;
-            
+
 
             @include tablet(){
               flex-basis: calc(25% - 1rem);
@@ -807,14 +802,14 @@ main.main-home{
 
             p{
               font-size: 1.6rem;
-              
+
               @include tablet(){
-                font-size: 2rem;
+                font-size: 1.6rem;
               }
 
               @include desktop(){
                 // font-size: 2.5rem;
-                font-size: 2rem;
+                font-size: 1.6rem;
               }
             }
 
@@ -825,12 +820,12 @@ main.main-home{
 
       img{
         max-width: 7rem;
-        
+
 
         @include custom(400){
           min-height: 10rem;
         }
-        
+
         @include tablet(){
           max-width: 8rem;
         }
@@ -909,7 +904,7 @@ main.main-home{
 
   }
 
-  
+
 
   @include desktop(){
     padding: 0 7%;
