@@ -20,16 +20,16 @@
     @include subTitle();
     text-align: left;
     @include tablet(){
-      
+
       padding: 0;
-      
+
     }
 
     @include desktop(){
       margin-top: 5rem;
       margin-bottom: 4rem;
     }
-    
+
   }
   p{
     font-size: 1.6rem;
@@ -51,7 +51,7 @@
     @include desktop(){
       margin-top: 5rem;
       max-width: 90rem;
-      
+
     }
 
     @include custom(1300){
@@ -70,7 +70,7 @@
     padding-bottom: 15rem;
   }
 
-  
+
 }
 
 .portafolio .contenedor{
@@ -85,20 +85,20 @@
     justify-content: center;
     margin: 0 10rem;
   }
-  
+
 
 
 
   .acierta,.prozess{
-    
+
     padding: 1%;
     color: white;
-    
+
 
     h2{
       font-size: 2rem;
       margin-top: 3rem;
-      
+
       @include tablet(){
         text-align: center;
         // min-height: 8rem;
@@ -109,13 +109,13 @@
       @include custom(1100){
         min-height: auto;
       }
-      
+
     }
     .img{
       margin: 2rem 0;
       text-align: center;
     }
-    
+
 
     .card{
       max-width: 45.5rem;
@@ -142,7 +142,7 @@
         }
         @include custom(1200){
           width: 40%;
-          
+
         }
 
       }
@@ -150,7 +150,8 @@
         background-color: white;
         max-width: 60%;
         border-radius: 5px;
-        
+        padding: 2rem;
+
       }
       p{
         margin-top: 2rem;
@@ -172,7 +173,7 @@
           max-width: 40rem;
           min-height: 14rem;
         }
-        
+
       }
     }
 
