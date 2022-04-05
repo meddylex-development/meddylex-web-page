@@ -20,7 +20,7 @@ export class HomeComponent {
   tecnologiasCognitivas : AnimationOptions = {
     path : 'assets/lottie/2.TecnologiasCognitivas.json'
   }
-  
+
 
   dropdown_classV:string = "valores-dropdown desactivado";
   dropdown_classP:string = "valores-dropdown desactivado";
@@ -30,9 +30,9 @@ export class HomeComponent {
   dropDownTitle : string = "";
   dropDownContent : string = "";
 
-  valores: any = 
-    { 
-      
+  valores: any =
+    {
+
       Emision_incapacidad:{
         titulo: "Emisión incapacidad",
         contenido : "Entendemos que el interés común prevalece sobre el particular, nos adherimos a los principios de desarrollo sostenible, estamos dispuestos a colaborar con los demás por el beneficio común, y obramos en consecuencia"
@@ -59,7 +59,7 @@ export class HomeComponent {
       },
 
       Identificacion_presuntos_Abusos_derecho:{
-        titulo: "Identificación presuntos Abusos del derecho",
+        titulo: "Identificación presunto Abuso de derecho",
         contenido: "Somos autoexigentes, ordenados y perseverantes. Agregamos un esfuerzo extra para convertir los retos y metas en logros y alcanzar la excelencia como práctica habitual"
       },
 
@@ -90,7 +90,7 @@ export class HomeComponent {
 
       this.dropDownVState = true;
       this.dropDownPState = false;
-      
+
     }else{
 
       this.dropdown_classP += " desactivado";
@@ -101,10 +101,10 @@ export class HomeComponent {
 
       this.dropDownTitle = titulo;
       this.dropDownContent = contenido;
-      
+
     }
   }
 
   constructor() { }
-  
+
 }

@@ -17,7 +17,7 @@
   section{
     margin  :2rem;
     margin-bottom: 0;
-    
+
     @include custom(400){
       margin: 2rem 3rem
     }
@@ -26,7 +26,7 @@
       margin: 7rem auto 4rem auto;
       max-width: 97rem;
       margin-bottom: 10rem
-      
+
     }
 
     @include custom(1400){
@@ -58,14 +58,14 @@
       @include desktop(){
         margin-bottom: 1rem;
       }
-      
+
 
     }
     p{
       font-size: 1.6rem;
 
       @include tablet(){
-        
+
         font-size: 2rem;
       }
 
@@ -103,10 +103,10 @@
     }
     @include custom(1500){
       margin:  0 30rem;
-      
+
     }
   }
-  
+
   article{
     margin: 0 2rem;
     margin-top: 8rem;
@@ -118,7 +118,7 @@
     @include tablet(){
       padding: 0 10rem;
     }
-    
+
     @include desktop(){
       flex-basis: calc(50% - 1rem);
       max-height: 80rem;
@@ -128,14 +128,14 @@
       padding: 0;
     }
 
-    
+
 
 
     .article-img{
       text-align: center;
 
       @include desktop(){
-        
+
         width: 70%;
         max-width:40.5rem;
       }
@@ -144,7 +144,7 @@
         @include desktop(){
           order: 2;
         }
-        
+
       }
 
     }
@@ -160,7 +160,7 @@
       @include desktop(){
         max-width: 70%;
       }
-      
+
     }
 
     p{
@@ -194,12 +194,12 @@
           font-size: 2rem;
         }
 
-        
+
       }
 
       .mas{
 
-      
+
 
         p{
         display: inline-flex;
@@ -211,9 +211,9 @@
         &:hover{
           text-decoration: underline;
         }
-        
+
         }
-        
+
       }
     }
 
@@ -225,7 +225,7 @@
 
       @include desktop(){
         padding-right: 10rem;
-        
+
       }
     }
 
@@ -239,25 +239,27 @@
       text-align: center;
 
       a{
-        
-        &:nth-child(1){
-          margin-right: 2rem;
-        }
-        &:nth-child(2){
-          margin-left: 2rem;
-        }
+
+        // &:nth-child(1){
+        //   margin-right: 2rem;
+        // }
+        // &:nth-child(2){
+        //   margin-left: 2rem;
+        // }
+
+        margin: 2rem;
 
       }
 
         img{
-          
+
         width: 60px;
-      
+
       }
 
     }
 
-    
+
 
     &:nth-child(2){
       padding-bottom: 8rem;
@@ -273,13 +275,13 @@
         flex-direction: row;
         margin-bottom: 10rem;
       }
-      
+
     }
   }
 
 
   .dropdown-juan,.dropdown-edwin{
-    
+
     margin: 0 2rem;
 
     p{
@@ -296,11 +298,11 @@
         margin-top: 2rem;
         text-align: center;
           img{
-            
+
           width: 60px;
-        
+
         }
-  
+
         @include desktop(){
           margin-top: 2rem;
         }
@@ -328,7 +330,7 @@
   .dropdown-edwin{
     margin-bottom: 5rem;
 
-  
+
   }
 
 }
